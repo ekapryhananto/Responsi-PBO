@@ -40,7 +40,7 @@ public class Control {
         this.editt = edit;
         
         if(modell.getBanyakData() != 0){
-            String dataKaryawan[][] = modell.readContact();
+            String dataKaryawan[][] = modell.readKaryawan();
             tampilVieww.tabel.setModel((new JTable(dataKaryawan, tampilVieww.namaKolom)).getModel());
         }else {
             JOptionPane.showMessageDialog(null, "Data Tidak Ada");
@@ -54,7 +54,7 @@ public class Control {
                 String gaji =inputt.getGaji();
                 modell.insert(nama, usia, gaji);
          
-                String dataKaryawan[][] = modell.readContact();
+                String dataKaryawan[][] = modell.readKaryawan();
                 tampilVieww.tabel.setModel((new JTable(dataKaryawan, tampilVieww.namaKolom)).getModel());
             }
         });

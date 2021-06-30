@@ -19,7 +19,7 @@ public class Karyawaan {
 
         Koneksi koneksi = new Koneksi();
     
-    public String[][] readContact(){
+    public String[][] readKaryawan(){
         try{
             int jumlah = 0;
             
